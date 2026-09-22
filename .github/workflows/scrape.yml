@@ -12,8 +12,7 @@ on:
         required: false
         default: ""
   schedule:
-    # Runs every day at 03:00 UTC. Adjust or remove as needed.
-    - cron: "0 3 * * *"
+  - cron: "0 */2 * * *"
 
 concurrency:
   group: myjobmag-scraper
